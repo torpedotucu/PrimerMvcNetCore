@@ -1,0 +1,18 @@
+﻿<h1>Collatz</h1>
+
+<form method="post">
+    <label>Numero</label>
+    <input type="number" name="numero" 
+        class="form-control" />
+        <button class="btn btn-info">Mostrar conjetura</button>
+</form>
+<hr />
+@if(Model!=null)
+{
+    <ul>
+       @foreach(int num in Model)
+       {
+           <li>@num</li>
+       }
+    </ul>
+}
