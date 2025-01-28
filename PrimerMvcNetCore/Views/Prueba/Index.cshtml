@@ -1,0 +1,24 @@
+﻿@*
+    COMENTARIOS
+
+*@
+@{
+    //DECLARACION DE VARIABLES A NIVEL DE PAGINA
+    //codigo c#
+    int valor = 4;
+    string texto = "Hoy es lunes";
+    valor += 1;
+
+}
+<h2 style="color:red">
+    Texto: @texto , @valor
+</h2>
+
+Codigo logico
+@if(valor>0){
+    texto = "POSITIVO";
+    <h3 style="color:green">@texto</h3>
+}else{
+    texto = "NEGATIVO";
+    <h3 style="color:red">@texto</h3>
+}

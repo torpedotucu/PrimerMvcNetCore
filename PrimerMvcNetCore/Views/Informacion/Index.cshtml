@@ -1,0 +1,23 @@
+﻿<h1>Menu Informacion</h1>
+<ul>
+    <li>
+        @Html.ActionLink("Vista Controller Get","VistaControllerGet","Informacion",new {saludo="YI",year=2025})
+    </li>
+    <li>
+        @Html.ActionLink("Vista Controller Get", "VistaControllerGet", "Informacion", new {  saludo = "SALUDOS" })
+    </li>
+    <li>
+        <a asp-controller="Informacion" asp-action="VistaControllerPost">Vista Controller POST</a>
+    </li>
+    <li>
+        <a asp-controller="Informacion"
+            asp-action="ControladorVista">
+            Controlador --> Vista
+        </a>
+    </li>
+    <li>
+        <a asp-controller="Informacion" asp-action="ControladorVistaModel">
+            Controlador --> Vista Model
+        </a>
+    </li>
+</ul>
